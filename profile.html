@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="notify.css">
+    </head>
+    <body>
+      
+<div class="header">
+            <h1 style="font-size:500%;">
+        
+                Amrita University
+            </h1>      
+</div>
+        
+      
+<div class="navbar" id="navbar">
+      <a  href="index.html" ><i class="fa fa-home"></i> Home</a>
+           <div class="dropdown">
+                 <button  class="dropbtn">View 
+                 <i class="fa fa-caret-down"></i>
+                 </button>
+            <div class="dropdown-content">
+                 <a  href="mycourses.html" >My Courses</a>
+                    <a href="view_studentlist.html" >Students list</a>
+                    <a href="viewattendance.html" >Attendance</a>
+            </div>
+           </div> 
+    <div class="dropdown">
+                 <button class="dropbtn"> Attendance 
+                 <i class="fa fa-caret-down"></i>
+                 </button>
+            <div class="dropdown-content">
+                    <a href="takeattendance.html" >Take Attendance</a>
+                    <a href="edit_attendance.html" >Edit Attendance</a>
+            </div>
+           </div>
+   <a href="applyforleave.html" >Apply for leave</a>
+   <div class="dropdown_active">
+         <button class="dropbtn"> Profile 
+            <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-content">
+         <a class='active' href="profile.html" >View Profile</a>
+         <a  href="profile.html" >Settings </a>
+    </div>
+   </div> 
+    <a href="notify.html" class="notification">
+  <span>Notifications</span>
+  <span class="badge">3</span>
+</a>
+   <a class="topnav-right" href="javascript:window.onclick =logout()" >Logout</a>
+ 
+</div>
+       <br><br><br>
+        
+
+        
+<iframe src="faculty.html" width="98%" height="100%">
+</iframe>
+        
+<script type="text/javascript">
+            
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;  
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    
+ </script>
+ 
+
+        
+        
+</body>
+</html>

@@ -1,0 +1,124 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="takeattendance.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        
+        <div class="header">
+            <h1 style="font-size:500%;">
+        
+                Amrita University
+            </h1>      
+</div>
+        
+      
+<div class="navbar" id="navbar">
+      <a href="index.html" ><i class="fa fa-home"></i> Home</a>
+           <div class="dropdown_active">
+                 <button   class="dropbtn">View 
+                 <i class="fa fa-caret-down"></i>
+                 </button>
+            <div class="dropdown-content">
+                    <a class="active" href="mycourses.html" >My Courses</a>
+                    <a href="view_studentlist.html" >Students list</a>
+                    <a  href="viewattendance.html" >Attendance</a>
+            </div>
+           </div> 
+    <div class="dropdown">
+                 <button class="dropbtn"> Attendance 
+                 <i class="fa fa-caret-down"></i>
+                 </button>
+            <div class="dropdown-content">
+                    <a href="takeattendance.html" >Take Attendance</a>
+                    <a href="edit_attendance.html" >Edit Attendance</a>
+            </div>
+           </div>
+   <a href="applyforleave.html" >Apply for leave</a>
+   <div class="dropdown">
+         <button class="dropbtn"> Profile 
+            <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-content">
+         <a href="profile.html" >View Profile</a>
+         <a href="profile.html" >Settings </a>
+    </div>
+   </div> 
+    <a href="notify.html" class="notification">
+  <span>Notifications</span>
+  <span class="badge">3</span>
+</a>
+   <a class="topnav-right" href="javascript:window.onclick =logout()" >Logout</a>
+</div>
+        
+     <script type="text/javascript">
+        
+
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;  
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    
+ </script>
+        
+        <br><br><br><br>
+       
+        
+    <br><br>
+    <center>
+        <table><caption>Viewing 7th semester courses</caption>
+       <tr>
+       <th>
+        Course code
+        </th>
+        <th>
+        Course Name
+        </th>
+        <th>
+        No of classes
+        </th>
+        </tr>
+                
+        <tr>
+       <td>
+        18CSE646
+        </td>
+        <td>
+        Data Mining
+        </td>
+        <td>
+        1
+        </td>
+        </tr>
+        
+        <tr>
+       <td>
+        15CSE376
+        </td>
+        <td>
+        Net Centric Pogramming
+        </td>
+        <td>
+        2
+        </td>
+        </tr>
+                
+      
+                
+        </table>
+          </center>  
+        
+
+        
+
+    </body>
+</html>

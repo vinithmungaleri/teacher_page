@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+
+#AcademicDetails {background-color: #ADD8E6;}
+#PersonalDetails {background-color: #ADD8E6;}
+#Health {background-color: #ADD8E6;}
+</style>
+
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('AcademicDetails', this, 'green')" id="defaultOpen">Academic Details</button>
+<button class="tablink" onclick="openPage('PersonalDetails', this, 'violet')">Personal Details</button>
+<button class="tablink" onclick="openPage('Health', this, 'orange')">Health</button>
+
+
+
+<div id="AcademicDetails" class="tabcontent">
+  <h3 style="color: green;" font-weight: bold;>AcademicDetails</h3>
+                 <b> <p class="Year" style="color:black;">Joining Year : <input type="text" id="fname" name="fname" value="2017"></p>
+                  <p class="Dept" style="color:black;">Department : <input type="text" id="fname" name="fname" value="Computer Science"></p>
+    
+                  <p class="Sem" style="color:black;">Subjects : <input type="text" id="fname" name="fname" value=""></p>
+                  </b>
+</div>
+
+<div id="PersonalDetails" class="tabcontent">
+  <h3 style="color: violet;" font-weight: bold;>PersonalDetails</h3>
+  <b> <p class="Year" style="color:black;">Father Name:<input type="text" id="fname" name="fname" value="Abc"> </p>
+                  <p class="Sem" style="color:black;">Contact number: <input type="text" id="fname" name="fname" value="1234567890"></p>
+                  <p class="Dept" style="color:black;">Mothers Name: <input type="text" id="fname" name="fname" value="xyz"></p>
+                  <p class="Sem" style="color:black;">Contact Number: <input type="text" id="fname" name="fname" value="1234567890"></p>
+                  <p class="Sem" style="color:black;">Parents Email: <input type="text" id="fname" name="fname" value="xyz@gmail.com"></p>
+                  <p class="Sem" style="color:black;">Nationality : <input type="text" id="fname" name="fname" value="Indian"></p>
+                  
+                  <p class="Sem" style="color:black;">Permenent Contact Address: <input type="text" id="fname" name="fname" value="xyz"> </p>
+
+                  </b>
+
+</div>
+
+<div id="Health" class="tabcontent">
+  <h3 style="color: orange;" font-weight: bold;>Health</h3>
+  <b><p class="Year" style="color:black;">Blood group    :  <input type="text" id="fname" name="fname" value="B+"></p>
+                  <p class="Admissionnumber" style="color:black;">Medical advisor : <input type="text" id="fname" name="fname" value=""></p>
+                  <p class="Dept" style="color:black;"> Medical history : <input type="text" id="fname" name="fname" value=""></p>
+                  <p class="Sem" style="color:black;">Medical Advisor Contact number : <input type="text" id="fname" name="fname" value=""></p>
+                  </b>
+
+</div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
+   
+</body>
+</html>

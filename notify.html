@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="notify.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 style="font-size:500%;">
+            Amrita University
+        </h1>
+    </div>
+
+
+    <div class="navbar" id="navbar">
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">View
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="mycourses.html">My Courses</a>
+                <a href="view_studentlist.html">Students list</a>
+                <a href="viewattendance.html">Attendance</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"> Attendance
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="takeattendance.html">Take Attendance</a>
+                <a href="edit_attendance.html">Edit Attendance</a>
+            </div>
+        </div>
+        <a href="applyforleave.html">Apply for leave</a>
+        <div class="dropdown">
+            <button class="dropbtn"> Profile
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="profile.html">View Profile</a>
+                <a href="profile.html">Settings </a>
+            </div>
+        </div>
+        <a class="active" href="notify.html" class="notification">
+            <span>Notifications</span>
+            <span class="badge">3</span>
+        </a>
+        <a class="topnav-right" href="javascript:window.onclick =logout()">Logout</a>
+    </div>
+
+
+    <script type="text/javascript">
+        window.onscroll = function() {
+            myFunction()
+        };
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+
+
+
+    <br><br><br>
+
+
+    <h2>Messages</h2>
+    <main class="container">
+        <section class="box">
+            <i class="far fa-calendar-alt"></i> <span style="display: inline;font-size: 1rem;padding-bottom: 20px; " ;class="date">18th August,2020</span>
+            <h4>Something Here...</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum enim, quibusdam nisi reiciendis possimus aliquam voluptatibus unde doloribus quod fugit dicta pariatur voluptatem voluptatum. Hic natus doloribus, eveniet eos officia, ullam optio deserunt rerum, in aperiam nemo alias saepe esse officiis. Sint sequi corporis repellendus inventore eum reiciendis sit maiores esse dolores. Voluptate tenetur, nostrum exercitationem adipisci, tempore animi sunt aliquam est minima perspiciatis saepe neque pariatur fugiat? Omnis ipsa modi aliquam dolore molestias. Accusantium eligendi officia ipsa deleniti necessitatibus alias quia aperiam iusto ex!
+            </p>
+        </section>
+
+        <section class="box">
+            <i class="far fa-calendar-alt"></i>
+            <span style="display: inline;font-size: 1rem;padding-bottom: 20px; " ;class="date">18th August,2020</span>
+            <h4>Something Here...</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum enim, quibusdam nisi reiciendis possimus aliquam voluptatibus unde doloribus quod fugit dicta pariatur voluptatem voluptatum. Hic natus doloribus, eveniet eos officia, ullam optio deserunt rerum, in aperiam nemo alias saepe esse officiis. Sint sequi corporis repellendus inventore eum reiciendis sit maiores esse dolores. Voluptate tenetur, nostrum exercitationem adipisci, tempore animi sunt aliquam est minima perspiciatis saepe neque pariatur fugiat? Omnis ipsa modi aliquam dolore molestias. Accusantium eligendi officia ipsa deleniti necessitatibus alias quia aperiam iusto ex!
+            </p>
+        </section>
+        <section class="box">
+            <i class="far fa-calendar-alt"></i> <span style="display: inline;font-size: 1rem;padding-bottom: 20px; " ;class="date">18th August,2020</span>
+            <h4>Something Here...</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum enim, quibusdam nisi reiciendis possimus aliquam voluptatibus unde doloribus quod fugit dicta pariatur voluptatem voluptatum. Hic natus doloribus, eveniet eos officia, ullam optio deserunt rerum, in aperiam nemo alias saepe esse officiis. Sint sequi corporis repellendus inventore eum reiciendis sit maiores esse dolores. Voluptate tenetur, nostrum exercitationem adipisci, tempore animi sunt aliquam est minima perspiciatis saepe neque pariatur fugiat? Omnis ipsa modi aliquam dolore molestias. Accusantium eligendi officia ipsa deleniti necessitatibus alias quia aperiam iusto ex!
+            </p>
+        </section>
+        <section class="box">
+            <i class="far fa-calendar-alt"></i> <span style="display: inline;font-size: 1rem;padding-bottom: 20px; " ;class="date">18th August,2020</span>
+            <h4>Something Here...</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum enim, quibusdam nisi reiciendis possimus aliquam voluptatibus unde doloribus quod fugit dicta pariatur voluptatem voluptatum. Hic natus doloribus, eveniet eos officia, ullam optio deserunt rerum, in aperiam nemo alias saepe esse officiis. Sint sequi corporis repellendus inventore eum reiciendis sit maiores esse dolores. Voluptate tenetur, nostrum exercitationem adipisci, tempore animi sunt aliquam est minima perspiciatis saepe neque pariatur fugiat? Omnis ipsa modi aliquam dolore molestias. Accusantium eligendi officia ipsa deleniti necessitatibus alias quia aperiam iusto ex!
+            </p>
+        </section>
+
+    </main>
+
+
+
+
+
+
+</body>
+
+</html>
